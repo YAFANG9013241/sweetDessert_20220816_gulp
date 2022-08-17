@@ -1,0 +1,11 @@
+
+.nav-link.nav-link-color {
+  color: theme-color("sweet-green-dark") !important;
+
+}
+
+header a {
+  color: theme-color("sweet-green-dark");
+  //font-style font-variant font-weight font-size/line-height font-family
+  font: normal normal 600 16px 'PingFang TC';
+}
