@@ -1,0 +1,20 @@
+.product{
+  .main-image {
+    background-repeat: no-repeat;
+    height: 496px;
+    background-image: url('../../images/social.png');
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  .product {
+      .main-image {
+        background-repeat: no-repeat;
+        height: 277px;
+        background-image: url('../../images/social.png');
+      }
+  
+    }
+}
