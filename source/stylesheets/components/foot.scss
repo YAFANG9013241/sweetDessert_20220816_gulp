@@ -1,30 +1,35 @@
-$html-color: #3F5D45;
+.footer{
 
-.foot-head {
-  background: theme-color("sweet-green-dark");
-  height: 186px;
-}
-@media (min-width: 768px) {
-.foot-head {
-    background: theme-color("sweet-green-dark");
-    height: 116px;
-  }
-}
+  .foot-head {
+      background: theme-color("sweet-green-dark");
+      height: 186px;
+    }
 
-.input-group.inputMail{
-  width: 380px;
-  height: 56px;
-}
-.font-size-24{
-  font-size: 24px;
-}
-.form-control.input-h56{
+    @media (min-width: 768px) {
+      .foot-head {
+        background: theme-color("sweet-green-dark");
+        height: 116px;
+      }
+    }
+
+    .input-group.inputMail {
+      width: 380px;
       height: 56px;
-}
-.input-icons{
-    background: #3F5D45;
-    padding-right:56px;
-    background-image: url('/images/mail_icon.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+    }
+
+    .font-size-24 {
+      font-size: 24px;
+    }
+
+    .form-control.input-h56 {
+      height: 56px;
+    }
+
+    .input-icons {
+      background: #3F5D45;
+      padding-right: 56px;
+      background-image: url('/images/mail_icon.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
 }
