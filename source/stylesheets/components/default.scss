@@ -1,3 +1,8 @@
+// 測試區
+.start-default {
+  background-color: pink;
+  height: 420px;
+}
 .sweet-text-color {
   color: color("sweet-green-dark");
 }
@@ -22,7 +27,6 @@
   background-size: cover;
   background-position: right center;
 }
-
-.filter-sweet {
-  backdrop-filter: blur(5px);
+.mt-md-top {
+  margin-top: -80px;
 }
