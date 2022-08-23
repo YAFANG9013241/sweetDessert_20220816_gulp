@@ -12,109 +12,52 @@
     }
   }
 
-  //   .guild {
-  //     margin-top: -85px;
-  //     max-width: 260px;
-  //     height: 256px;
-  //     background-repeat: no-repeat;
-  //     z-index: 1;
-  //     border-left: 1px solid white;
-  //     border-right: 1px solid white;
-  //     &.g-1::before,
-  //     &.g-2::before,
-  //     &.g-3::before {
-  //       content: "";
-  //       position: absolute;
-  //       top: 0;
-  //       left: 0;
-  //       right: 0;
-  //       bottom: 0;
-  //       background-color: rgba(63, 93, 69, 0.8);
-  //       transition: background-color 0.5s;
-  //       backdrop-filter: blur(5px);
-  //       z-index: -1;
-  //     }
-
-  //     &:hover {
-  //       &.g-1::before,
-  //       &.g-2::before,
-  //       &.g-3::before {
-  //         background-color: rgba(255, 255, 128, 0.8) !important;
-  //         cursor: pointer;
-  //         transition: background-color 0.5s;
-  //         backdrop-filter: blur(0);
-  //       }
-  //     }
-
-  //     &.g-1 {
-  //       background-image: url("https://bit.ly/2R5tqwD");
-  //     }
-  //     &.g-2 {
-  //       background-image: url("https://bit.ly/2Dwoxd7");
-  //     }
-  //     &.g-3 {
-  //       background-image: url("https://bit.ly/2OUteif");
-  //     }
-  //   }
-
   .guild {
     height: 256px;
     position: relative;
-    overflow: hidden;
-    z-index: 2;
-    writing-mode: vertical-lr;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     text-decoration: none;
+
     & + .guild {
       border-left: 1px solid white;
     }
 
-    .guild-img {
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      filter: blur(5px);
-      z-index: -2;
-      transition: filter 0.5s;
-    }
-    .guild-text {
-      font-size: 24px;
-      letter-spacing: 10px;
-      font-weight: 900;
-    }
-    .guild-over {
-      background-color: rgba(63, 93, 69, 0.8);
-      transition: background-color 0.5s;
-    }
-    // four sides
-    .four-sides {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-    }
-    .zindex--1 {
-      z-index: -1;
-    }
-
     // 互動樣式
     &.active,
-    &:hover,
-    &:focus {
+    &:hover {
       color: rgba(63, 93, 69, 1);
-      font-weight: bolder;
-      .guild-over {
+      font-weight: 900;
+      .guild-mask {
         background-color: rgba(255, 255, 128, 0.5);
       }
       .guild-img {
         filter: blur(0);
       }
+    }
+
+    .guild-img {
+      z-index: -2;
+      filter: blur(5px);
+      transition: filter 0.5s;
+    }
+    .guild-text {
+      writing-mode: vertical-lr;
+      font-size: 24px;
+      letter-spacing: 10px;
+      font-weight: 900;
+    }
+    .guild-mask {
+      z-index: -1;
+      background-color: rgba(63, 93, 69, 0.8);
+      transition: background-color 0.5s;
+    }
+    // four sides
+    .position-absolute {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
     }
   }
 }

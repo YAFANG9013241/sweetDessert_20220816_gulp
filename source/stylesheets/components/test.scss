@@ -1,64 +1,46 @@
-.headers {
-  height: 496px;
-
-  .rectangle-image-wrap {
+.test {
+  .guild {
     height: 256px;
     position: relative;
-    overflow: hidden;
-    z-index: 2;
-    writing-mode: vertical-lr;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     text-decoration: none;
-    & + .rectangle-image-wrap {
+
+    & + .guild {
       border-left: 1px solid white;
     }
-    .rectangle-over {
-      background-color: rgba(63, 93, 69, 0.8);
-      transition: background-color 0.5s;
-    }
 
-    // 互動樣式
-    &.active,
+    &:active,
     &:hover {
       color: rgba(63, 93, 69, 1);
-      font-weight: bolder;
-      .rectangle-over {
-        background-color: rgba(255, 255, 128, 0.6);
+      .guild-mask {
+        background-color: rgba(255, 255, 128, 0.5);
       }
-      .rectangle-image {
+      .guild-img {
         filter: blur(0);
       }
     }
   }
-
-  .rectangle-text {
+  .guild-text {
     font-size: 24px;
+    font-weight: 900;
     letter-spacing: 10px;
+    writing-mode: vertical-lr;
   }
-
-  .rectangle-image {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
+  .guild-mask {
+    background-color: rgba(63, 93, 69, 0.8);
+    transition: background-color 0.5s;
+    z-index: -1;
+  }
+  .guild-img {
+    height: 256px;
     filter: blur(5px);
     z-index: -2;
-    transition: filter 0.5s;
   }
-}
-
-// four sides
-.four-sides {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-.zindex--1 {
-  z-index: -1;
+  .position-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
