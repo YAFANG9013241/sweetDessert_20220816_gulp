@@ -3,6 +3,7 @@
   background-color: pink;
   height: 420px;
 }
+//color
 .sweet-text-color {
   color: color("sweet-green-dark");
 }
@@ -10,7 +11,7 @@
 .sweet-text-green-light {
   color: color("sweet-green-light");
 }
-
+//font
 .font-size-24 {
   font-size: 24px;
 }
@@ -18,6 +19,7 @@
   font-weight: 600;
 }
 
+//background-position
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -27,6 +29,43 @@
   background-size: cover;
   background-position: right center;
 }
-.mt-md-top {
+
+//margin-top
+.mt-md-top--80 {
   margin-top: -80px;
+}
+
+.mt-md-top--30 {
+  margin-top: -30px;
+}
+.mt-md-top--20 {
+  margin-top: -20px;
+}
+.mt-md-top--16 {
+  margin-top: -16px;
+}
+
+@media (max-width: 767.98px) {
+  .mt-md-top--80 {
+    margin-top: 0;
+  }
+  .mt-md-top--30 {
+    margin-top: 0px;
+  }
+  .mt-md-top--20 {
+    margin-top: 0;
+  }
+  .mt-md-top--16 {
+    margin-top: 0;
+  }
+}
+
+//block-height
+@media (min-width: 767.98px) {
+  .block-md-h420 {
+    height: 420px;
+  }
+  .block-md-h330 {
+    height: 330px;
+  }
 }
