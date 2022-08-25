@@ -37,6 +37,8 @@
     position: absolute;
     top: 16px;
     right: 20px;
+    z-index: 99;
+    cursor: pointer;
   }
 
   .tab-sweet-hart:hover {
@@ -48,6 +50,7 @@
   .tab-sweet-hart-fav {
     background-image: url("../../images/tab-heart.png");
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 }
 
