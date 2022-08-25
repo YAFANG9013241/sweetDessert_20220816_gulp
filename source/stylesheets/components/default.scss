@@ -15,6 +15,13 @@
 .font-size-24 {
   font-size: 24px;
 }
+.font-size-36 {
+  font-size: 36px;
+}
+.font-family {
+  font-family: "PingFang TC, Semibold";
+}
+
 .font-weight-600 {
   font-weight: 600;
 }
@@ -22,6 +29,11 @@
 //background-position
 .bg-cover {
   background-size: cover;
+  background-position: center center;
+}
+//img
+.img-set {
+  background-repeat: no-repeat;
   background-position: center center;
 }
 
