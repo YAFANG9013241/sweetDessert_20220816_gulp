@@ -6,13 +6,19 @@ current: login
 ---
 <div class="login container mb-md-60">
   <div class="row no-gutters justify-content-center">
-    <div class="col-md-5 bg-sweet-green-dark">
-      <h1 class="font-size-36 font-family text-center py-md-40 text-white font-weight-bolder mb-0">會員登入</h1>
+    <div class="col-md-5 bg-sweet-green-dark d-block d-md-none order-1">
+      <h1 class="font-size-36 font-family text-center py-30 text-white font-weight-bolder mb-0">
+        會員登入</h1>
+    </div>
+
+    <div class="col-md-5 bg-sweet-green-dark order-3 order-md-1">
+      <h1 class="font-size-36 font-family text-center py-md-40 text-white font-weight-bolder mb-0 d-none d-md-block">
+        會員登入</h1>
       <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-10">
           <!-- user -->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
+          <div class="input-group mb-3 mt-30 mt-md-0">
+            <div class="input-group-prepend" style="max-width:20%;">
               <span class="sweet-input-group-text">
                 <img src="https://img.icons8.com/material-rounded/24/3f5d45/user.png" />
               </span>
@@ -22,7 +28,7 @@ current: login
           </div>
           <!-- email -->
           <div class="input-group mb-3">
-            <div class="input-group-prepend">
+            <div class="input-group-prepend" style="max-width:20%;">
               <span class="sweet-input-group-text ">
                 <img src="https://img.icons8.com/material-sharp/24/3f5d45/key--v1.png" />
               </span>
@@ -31,7 +37,7 @@ current: login
             <input type="password" class="sweet-input-user" maxlength="35" placeholder="請輸入使用者密碼">
           </div>
           <!-- checkbox -->
-          <div class="form-group">
+          <div class="form-group mb-30">
             <div class="form-check">
               <input class="sweet-form-check-input" type="checkbox" id="gridCheck">
               <label class="form-check-label text-white" for="gridCheck">
@@ -42,16 +48,16 @@ current: login
         </div>
       </div>
       <button type="submit"
-        class="btn btn-sweet-yellow-light btn-block rounded-0 py-md-15 font-size-24 text-sweet-green-dark font-weight-600 position-relative"
+        class="btn btn-sweet-yellow-light btn-block rounded-0 py-15 font-size-24 text-sweet-green-dark font-weight-600 position-relative"
         style="z-index:2;">登入帳號
       </button>
     </div>
 
-    <div class="col-md-5 my-md-15 bg-sweet-green-light">
+    <div class="col-md-5 my-md-15 bg-sweet-green-light order-2 order-md-2">
       <div class="row justify-content-center">
         <div class="col-md-10 text-center">
-          <p class="font-size-24 my-md-40 text-sweet-green-middle">—— 連結社群帳號 ——</p>
-          <div class="society d-flex flex-md-column">
+          <p class="font-size-24-18 my-md-40 text-sweet-green-middle d-none d-md-block">—— 連結社群帳號 ——</p>
+          <div class="society d-flex justify-content-center flex-md-column  justify-content-md-start block-h56 m-30">
             <button type="button" class="btn btn-light text-sweet-green-middle font-size-24 rounded-0">facebook</button>
             <button type="button"
               class="btn btn-light mt-md-15 text-sweet-green-middle font-size-24 rounded-0">Google</button>

@@ -18,6 +18,11 @@
 .font-size-36 {
   font-size: 36px;
 }
+
+.font-size-24-18 {
+  font-size: 24px;
+}
+
 .font-family {
   font-family: "PingFang TC, Semibold";
 }
@@ -72,6 +77,9 @@
   }
 }
 
+.block-h56 {
+  height: 56px;
+}
 //block-height
 @media (min-width: 767.98px) {
   .block-md-h420 {
@@ -79,5 +87,12 @@
   }
   .block-md-h330 {
     height: 330px;
+  }
+}
+
+//中間斷點
+@media (min-width: 768px) and (max-width: 1023px) {
+  .font-size-24-18 {
+    font-size: 18px;
   }
 }
