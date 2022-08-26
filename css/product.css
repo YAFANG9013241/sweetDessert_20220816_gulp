@@ -1,0 +1,66 @@
+.product .main-image {
+  background-repeat: no-repeat;
+  height: 496px;
+  background-image: url("../../images/social.png");
+}
+.product .product-img {
+  background-repeat: no-repeat;
+  min-width: 299px;
+  height: 315px;
+}
+.product .product-text {
+  height: 56px;
+  line-height: 56px;
+}
+.product .product-border-r-1 {
+  border-right: 1px solid #eaf0ed;
+}
+.product .card-width {
+  min-width: 300px;
+}
+.product .tab-sweet-title {
+  width: 36px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  line-height: 21px;
+}
+.product .tab-sweet-hart {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
+.product .tab-sweet-hart:hover {
+  background-image: url("../../images/tab-heart.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.product .tab-sweet-hart-fav {
+  background-image: url("../../images/tab-heart.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .product .main-image {
+    background-repeat: no-repeat;
+    height: 277px;
+    background-image: url("../../images/social.png");
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product .product-img {
+    min-width: auto;
+  }
+  .product .card-width {
+    min-width: 210px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}/*# sourceMappingURL=product.css.map */

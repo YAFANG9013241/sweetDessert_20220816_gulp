@@ -1,0 +1,23 @@
+.footer .foot-head {
+  background: theme-color("sweet-green-dark");
+  height: 186px;
+}
+@media (min-width: 768px) {
+  .footer .foot-head {
+    height: 116px;
+  }
+}
+.footer .input-group.inputMail {
+  width: 380px;
+  height: 56px;
+}
+.footer .form-control.input-h56 {
+  height: 56px;
+}
+.footer .input-icons {
+  background: #3f5d45;
+  padding-right: 56px;
+  background-image: url("/images/mail_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}/*# sourceMappingURL=foot.css.map */

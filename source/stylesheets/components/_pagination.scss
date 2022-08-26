@@ -65,20 +65,20 @@
     }
   }
   &:last-child {
-    .page-link {
+    .page-link-sweet {
       // @include border-right-radius($border-radius);
       @include border-right-radius(0);
     }
   }
 
-  &.active .page-link {
+  &.active .page-link-sweet {
     z-index: 3;
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
     border-color: $pagination-active-border-color;
   }
 
-  &.disabled .page-link {
+  &.disabled .page-link-sweet {
     color: $pagination-disabled-color;
     pointer-events: none;
     // Opinionated: remove the "hand" cursor set previously for .page-link

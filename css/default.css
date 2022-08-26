@@ -1,9 +1,8 @@
-// 測試區
 .start-default {
   background-color: pink;
   height: 420px;
 }
-//color
+
 .sweet-text-color {
   color: color("sweet-green-dark");
 }
@@ -11,13 +10,15 @@
 .sweet-text-green-light {
   color: color("sweet-green-light");
 }
-//font
+
 .font-size-20 {
   font-size: 20px;
 }
+
 .font-size-24 {
   font-size: 24px;
 }
+
 .font-size-36 {
   font-size: 36px;
 }
@@ -33,17 +34,16 @@
 .font-weight-600 {
   font-weight: 600;
 }
-//border-top-1
+
 .border-bottom-white {
   border-bottom: 1px solid white;
 }
 
-//background-position
 .bg-cover {
   background-size: cover;
   background-position: center center;
 }
-//img
+
 .img-set {
   background-repeat: no-repeat;
   background-position: center center;
@@ -54,7 +54,6 @@
   background-position: right center;
 }
 
-//margin-top
 .mt-md-top--80 {
   margin-top: -80px;
 }
@@ -62,9 +61,11 @@
 .mt-md-top--30 {
   margin-top: -30px;
 }
+
 .mt-md-top--20 {
   margin-top: -20px;
 }
+
 .mt-md-top--16 {
   margin-top: -16px;
 }
@@ -83,7 +84,6 @@
     margin-top: 0;
   }
 }
-
 .block-h56 {
   height: 56px;
 }
@@ -91,7 +91,7 @@
 .block-h193 {
   height: 193px;
 }
-//block-height
+
 @media (min-width: 767.98px) {
   .block-md-h420 {
     height: 420px;
@@ -100,10 +100,8 @@
     height: 330px;
   }
 }
-
-//中間斷點
 @media (min-width: 768px) and (max-width: 1023px) {
   .font-size-24-18 {
     font-size: 18px;
   }
-}
+}/*# sourceMappingURL=default.css.map */
