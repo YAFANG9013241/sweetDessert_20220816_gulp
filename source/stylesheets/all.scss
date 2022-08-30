@@ -2,7 +2,6 @@
 @import "helpers/variables";
 @import "mixins";
 //@import "bootstrap"; //BS4
-
 // 元件
 @import "root";
 @import "reboot";
@@ -39,6 +38,11 @@
 @import "utilities";
 @import "print";
 
+//元件
+@import "components/list-group";
+@import "components/pagination";
+@import "components/test";
+
 // 自訂義通用類別
 @import "components/default";
 @import "components/head";
@@ -47,7 +51,3 @@
 @import "components/index";
 @import "components/login";
 @import "components/shopCart";
-//元件
-@import "components/list-group";
-@import "components/pagination";
-@import "components/test";
