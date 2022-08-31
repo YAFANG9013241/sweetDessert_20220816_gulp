@@ -20,4 +20,16 @@
       }
     }
   }
+
+  //sm
+  @media (max-width: 767.98px) {
+    .orderSummary {
+      .row.bg-sweet-green-dark {
+        background-color: white !important;
+      }
+      .text-sweet-green-light {
+        color: #3f5d45 !important;
+      }
+    }
+  }
 }
