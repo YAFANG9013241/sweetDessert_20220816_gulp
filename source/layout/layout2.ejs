@@ -15,14 +15,91 @@
 
 <body>
 
-  <head>222</head>
+  <%- include('head.ejs') %>
 
-  <%- contents %>
+    <main class="container my-65">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row">
+            <!-- left -->
+            <div class="col-md-7">
+              <%- contents %>
+            </div>
+            <!-- right -->
+            <!-- default-pink block-h590 -->
+            <div class="col-md-5">
+              <div class="checkoutSummary border-1">
+                <div class="row block-h193 justify-content-center text-sweet-green-middle mb-1">
+                  <div class="col-md-12">
+                    <div
+                      class="text-center font-size-24 py-md-15 text-sweet-green-middle btn-sweet-green-light font-weight-600">
+                      訂單摘要
+                    </div>
+                  </div>
+                  <div class="col-md-11 d-flex justify-content-between px-20">
+                    <span>小計</span><span>NT$ 2,700</span>
+                  </div>
+                  <div class="col-md-11 d-flex justify-content-between px-20">
+                    <span>運費</span><span>NT$ 300</span>
+                  </div>
+                  <div class="col-md-11 d-flex justify-content-between font-size-20 font-weight-bold px-20">
+                    <span>總計</span><span>NT$ 3,000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="checkoutList border-1 mt-20">
+                <div class="row justify-content-center ">
+                  <div class="col-md-12">
+                    <div
+                      class="text-center font-size-24 py-md-15 text-sweet-green-middle btn-sweet-green-light font-weight-600">
+                      購物清單
+                    </div>
+                  </div>
+                  <div class="col-md-11  text-sweet-green-middle">
+                    <!-- 1 -->
+                    <div class="row my-3">
+                      <div class="col-6 pl-20 pr-10">
+                        <img class="bg-cover" src="https://bit.ly/2QvsT63" height="80" width="120">
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center pr-20 pl-10">
+                        <p class="mb-0">焦糖馬卡龍（2）</p>
+                        <p class="font-size-20 font-weight-600 mb-0">NT$ 900</p>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row">
+                      <div class="col-6 pl-20 pr-10">
+                        <img class="bg-cover" src="https://bit.ly/2zBDAxX" height="80" width="120">
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center pr-20 pl-10">
+                        <p class="mb-0">焦糖馬卡龍（2）</p>
+                        <p class="font-size-20 font-weight-600 mb-0">NT$ 900</p>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="row my-3">
+                      <div class="col-6 pl-20 pr-10">
+                        <img class="bg-cover" src="https://bit.ly/2zKOP7w" height="80" width="120">
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center pr-20 pl-10">
+                        <p class="mb-0">焦糖馬卡龍（2）</p>
+                        <p class="font-size-20 font-weight-600 mb-0">NT$ 900</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <footer>ssssssssssssssss</footer>
-    <script src="javascripts/vendor.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/index.js"></script>
+        </div>
+      </div>
+    </main>
+
+    <%- include('footer.ejs') %>
+      <script src="javascripts/vendor.js"></script>
+      <script src="js/all.js"></script>
+      <script src="js/index.js"></script>
 
 </body>
 

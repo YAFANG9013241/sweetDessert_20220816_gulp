@@ -6,14 +6,17 @@
   border-bottom: 1px solid $color;
 }
 
+@mixin sweet-border($color) {
+  border: 1px solid $color;
+}
+
 @mixin sweet-font-size($size) {
   font-size: $size;
 }
 
 // 測試區
-.start-default {
+.default-pink {
   background-color: pink;
-  height: 420px;
 }
 //color
 .sweet-text-color {
@@ -52,6 +55,10 @@
 }
 .border-bottom-1 {
   @include sweet-border-bottom(#eaf0ed);
+}
+
+.border-1 {
+  @include sweet-border(#eaf0ed);
 }
 
 .border-bottom-white {
@@ -111,6 +118,11 @@
 .block-h193 {
   height: 193px;
 }
+
+.block-h590 {
+  height: 590px;
+}
+
 //block-height
 @media (min-width: 767.98px) {
   .block-md-h420 {
