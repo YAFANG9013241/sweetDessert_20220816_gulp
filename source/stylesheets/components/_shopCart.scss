@@ -7,4 +7,17 @@
     border: 1px solid #eaf0ed;
     border-radius: 0;
   }
+
+  //lg
+  @media (min-width: 1023px) {
+    table tr > td {
+      &:nth-child(1),
+      &:nth-child(2) {
+        width: 140px;
+      }
+      &:nth-child(3) {
+        width: 200px;
+      }
+    }
+  }
 }

@@ -5,20 +5,49 @@ engine: ejs
 current: shopCart
 ---
 
-<div class="container cart font-family mb-md-40">
-  <div class="row justify-content-end">
-    <div class="col-md-8">
-      <div
-        class="alert alert-sweet-green-middle font-size-24 font-weight-600 text-sweet-green-dark rounded-0 text-center py-md-15 border-0 mb-md-20">
-        您的購物車
-      </div>
-      <!-- md隱藏 -->
+<div class="cart container-fluid container-md font-family mb-md-40">
+  <div class="row justify-content-md-end">
+    <header
+      class="alert alert-sweet-green-middle font-size-24 font-weight-600 w-100 d-block d-md-none text-sweet-green-dark rounded-0 text-center py-md-15 border-0 mb-md-20">
+      您的購物車
+    </header>
 
-      <div>22 x</div>
-      <div class="col-12">22 o</div>
-      <div class="row">
-        <div class="col-12">33 x</div>
-      </div>
+    <!-- left -->
+    <div class="col-md-8">
+      <header
+        class="alert alert-sweet-green-middle font-size-24 font-weight-600 d-none d-md-block text-sweet-green-dark rounded-0 text-center py-md-15 border-0 mb-md-20">
+        您的購物車
+      </header>
+      <!-- md隱藏 -->
+      <main class="d-block d-md-none">
+        <div class="row">
+          <div class="col-7">
+            <img class="w-90 bg-cover" src="https://bit.ly/2QvsT63" height="150">
+          </div>
+          <div class="col-5 d-flex flex-column justify-content-center">
+            <p class="font-size-20 mb-0 ver">焦糖馬卡龍</p>
+            <p>NT$ 450</p>
+            <div class="input-group mb-3" style="width:144px;">
+              <div class="input-group-prepend">
+                <button
+                  class="btn btn-outline-sweet-green-light rounded-0 py-10 px-20 font-weight-bolder text-sweet-green-dark shadow-none"
+                  type="button">-</button>
+              </div>
+              <input type="text" class="form-control form-sweet" value="2">
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-sweet-green-light rounded-0 py-10 px-20  text-sweet-green-dark shadow-none"
+                  type="button">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-right">
+            <P>NT$ 900</P>
+          </div>
+        </div>
+
+      </main>
+
       <!-- md顯示 -->
       <table class="table text-sweet-green-dark mb-md-0 d-none d-md-block">
         <tbody>
@@ -31,7 +60,7 @@ current: shopCart
               <p>NT$ 450</p>
             </td>
             <td class="border-top-0 align-middle mx-auto">
-              <!-- md隱藏  -->
+              <!-- md隱藏 lg  -->
               <div class="d-md-none d-lg-block">
                 <div class="input-group mb-3" style="max-width:144px;">
                   <div class="input-group-prepend">
@@ -175,6 +204,8 @@ current: shopCart
         </tbody>
       </table>
     </div>
+
+    <!-- right -->
     <div class="col-md-4 pl-md-20">
       <div class="orderSummary">
         <div class="row justify-content-between bg-sweet-green-dark text-sweet-green-light block-h193">
