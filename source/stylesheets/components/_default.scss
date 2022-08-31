@@ -1,3 +1,15 @@
+//變數
+@mixin sweet-border-top($color) {
+  border-top: 1px solid $color;
+}
+@mixin sweet-border-bottom($color) {
+  border-bottom: 1px solid $color;
+}
+
+@mixin sweet-font-size($size) {
+  font-size: $size;
+}
+
 // 測試區
 .start-default {
   background-color: pink;
@@ -13,13 +25,13 @@
 }
 //font
 .font-size-20 {
-  font-size: 20px;
+  @include sweet-font-size(20px);
 }
 .font-size-24 {
-  font-size: 24px;
+  @include sweet-font-size(24px);
 }
 .font-size-36 {
-  font-size: 36px;
+  @include sweet-font-size(36px);
 }
 
 .font-size-24-18 {
@@ -33,7 +45,15 @@
 .font-weight-600 {
   font-weight: 600;
 }
-//border-top-1
+
+//border
+.border-top-1 {
+  @include sweet-border-top(#eaf0ed);
+}
+.border-bottom-1 {
+  @include sweet-border-bottom(#eaf0ed);
+}
+
 .border-bottom-white {
   border-bottom: 1px solid white;
 }
