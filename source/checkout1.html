@@ -5,13 +5,13 @@ engine: ejs
 current: checkout1
 ---
 <!-- row.col-md-7 -->
-<div class="checkout_one row bg-sweet-green-dark justify-content-center h-100">
+<div class="checkout row bg-sweet-green-dark justify-content-center h-100">
   <div class="col-10">
     <!-- header -->
     <div class="row justify-content-between text-sweet-green-light mt-30 align-items-center">
       <h1 class="font-size-36 font-weight-600 mb-md-0">運送</h1>
       <div class="group-circle d-flex justify-content-end">
-        <div class="circle"></div>
+        <div class="circle circle_one"></div>
         <div class="line"></div>
         <div class="circle"></div>
         <div class="line"></div>
@@ -40,7 +40,7 @@ current: checkout1
           <div class="form-row mb-2">
             <div class="col">
               <select class="custom-select custom-select-sweet">
-                <option class="rounded-top-0" value="">請選擇</option>
+                <option value="">請選擇</option>
                 <option value="1">台中市</option>
                 <option value="2">台北市</option>
                 <option value="3" selected="selected">高雄市</option>
@@ -49,7 +49,7 @@ current: checkout1
             </div>
             <div class="col">
               <select class="custom-select custom-select-sweet">
-                <option class="rounded-top-0" value="">請選擇</option>
+                <option value="">請選擇</option>
                 <option value="1">三民區</option>
                 <option value="2">苓雅區</option>
                 <option value="3" selected="selected">新興區</option>
@@ -62,6 +62,6 @@ current: checkout1
     </div>
   </div>
   <!-- btn -->
-  <button type="submit"
-    class="btn btn-sweet-yellow-light btn-block text-sweet-green-dark font-size-24 font-weight-600 rounded-0 py-20">下一步</button>
+  <a href="checkout2.html" type="submit"
+    class="btn btn-sweet-yellow-light btn-block text-sweet-green-dark font-size-24 font-weight-600 rounded-0 py-20">下一步</a>
 </div>

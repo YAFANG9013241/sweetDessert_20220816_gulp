@@ -1,0 +1,74 @@
+---
+title:
+layout: ./source/layout/layout2.ejs
+engine: ejs
+current: checkout2
+---
+<!-- row.col-md-7 -->
+<div class="checkout row bg-sweet-green-dark justify-content-center">
+  <div class="col-10">
+    <!-- header -->
+    <div class="row justify-content-between text-sweet-green-light mt-30 align-items-center">
+      <h1 class="font-size-36 font-weight-600 mb-md-0">運送</h1>
+      <div class="group-circle d-flex justify-content-end ">
+        <div class="circle circle_two position-relative"><span></span></div>
+        <div class="line"></div>
+        <div class="circle circle_one"></div>
+        <div class="line"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <!-- form -->
+    <div class="text-sweet-green-light font-size-20 my-30">
+      <form action="">
+
+        <div class="form-group row">
+          <label for="lastName">ss</label>
+          <input type="text" class="form-control form-control-sweet" id="lastName" placeholder="王">
+        </div>
+        <div class="row">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="lastName">姓氏</label>
+              <input type="text" class="form-control form-control-sweet" id="lastName" placeholder="王">
+            </div>
+            <div class="form-group col-6">
+              <label for="name">名字</label>
+              <input type="text" class="form-control form-control-sweet" id="name" placeholder="小明">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-12 px-0">
+            <label for="address2">地址</label>
+            <div class="form-row">
+              <div class="col-6">
+                <select class="custom-select custom-select-sweet">
+                  <option value="">請選擇</option>
+                  <option value="1">台中市</option>
+                  <option value="2">台北市</option>
+                  <option value="3" selected="selected">高雄市</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <select class="custom-select custom-select-sweet">
+                  <option value="">請選擇</option>
+                  <option value="1">三民區</option>
+                  <option value="2">苓雅區</option>
+                  <option value="3" selected="selected">新興區</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- btn -->
+  <button type="submit"
+    class="btn btn-sweet-yellow-light btn-block text-sweet-green-dark font-size-24 font-weight-600 rounded-0 py-20">下一步
+  </button>
+</div>
