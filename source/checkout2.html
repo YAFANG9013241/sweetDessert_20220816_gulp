@@ -22,9 +22,20 @@ current: checkout2
     <div class="text-sweet-green-light font-size-20 my-30 font-weight-600">
       <form action="">
         <!-- input_one -->
-        <div class="form-group row">
-          <label for="card">信用卡卡號</label>
-          <input type="text" class="form-control form-control-sweet" id="card" placeholder="9012-3456-7890-1234">
+        <div class="row login">
+          <div class="form-group flex-grow-1">
+            <label for="card">信用卡卡號</label>
+            <div class="input-group">
+              <!-- 限制字數maxlength="30" -->
+              <input type="text" class="form-control sweet-input-email shadow-none" id="card"
+                placeholder="9012-3456-7890-1234" maxlength="30">
+              <div class="input-group-append">
+                <span class="sweet-input-group-text">
+                  <img src="https://img.icons8.com/material-outlined/24/3f5d45/bank-card-back-side.png" />
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- input_two -->
         <div class="row">
@@ -68,7 +79,8 @@ current: checkout2
         <div class="row">
           <div class="form-group col-6 px-0 mb-0">
             <label for="back_three">背面末三碼</label>
-            <input type="text" class="form-control form-control-sweet cardName" placeholder="123" id="back_three">
+            <input type="text" class="form-control form-control-sweet cardName" placeholder="123" id="back_three"
+              maxlength="3">
           </div>
         </div>
       </form>
