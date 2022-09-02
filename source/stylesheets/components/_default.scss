@@ -27,6 +27,9 @@
   color: color("sweet-green-light");
 }
 //font
+.font-size-16 {
+  @include sweet-font-size(16px);
+}
 .font-size-20 {
   @include sweet-font-size(20px);
 }

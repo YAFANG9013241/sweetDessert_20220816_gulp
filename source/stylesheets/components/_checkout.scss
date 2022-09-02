@@ -46,6 +46,7 @@
   }
 }
 
+//default
 .circle {
   &.circle_one::after {
     position: absolute;
@@ -73,5 +74,23 @@
       background-color: #eaf0ed;
       border-radius: 50%;
     }
+  }
+}
+//default
+.nav-tabs-sweet {
+  .nav-link {
+    background-color: transparent;
+    border: 1px solid #eaf0ed;
+    color: #eaf0ed;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include border-top-radius(0);
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: #3f5d45;
+    background-color: #eaf0ed;
+    border: 1px solid #eaf0ed;
   }
 }

@@ -1,0 +1,115 @@
+---
+title:
+layout: ./source/layout/layout2.ejs
+engine: ejs
+current: checkout3
+---
+<!-- row.col-md-7 -->
+<div class="checkout row bg-sweet-green-dark justify-content-center">
+  <div class="col-10">
+    <!-- header -->
+    <div class="row justify-content-between text-sweet-green-light mt-30 align-items-center">
+      <h1 class="font-size-36 font-weight-600 mb-md-0">發票</h1>
+      <div class="group-circle d-flex justify-content-end ">
+        <div class="circle circle_two position-relative"><span></span></div>
+        <div class="line"></div>
+        <div class="circle circle_two position-relative"><span></span></div>
+        <div class="line"></div>
+        <div class="circle circle_one"></div>
+      </div>
+    </div>
+
+    <!-- nav_tab -->
+    <div class="row">
+      <nav class="nav nav-tabs-sweet flex-grow-1 text-center font-size-20 font-weight-600 text-sweet-green-dark my-30"
+        id="myTab" role="tablist">
+        <a class="nav-item nav-link flex-grow-1 active" data-toggle="tab" href="#nav-electronicInvoice">電子發票</a>
+        <a class="nav-item nav-link flex-grow-1" data-toggle="tab" href="#nav-mailInvoice">郵寄發票</a>
+      </nav>
+    </div>
+    <!-- tab-content -->
+    <div class="tab-content mb-30" id="nav-tabContent">
+      <!-- tab_one -->
+      <div class="tab-pane fade show active" id="nav-electronicInvoice">
+        <!-- form -->
+        <div class="text-sweet-green-light font-size-20 font-weight-600">
+          <form action="">
+            <!-- input_one -->
+            <div class="form-group row">
+              <label for="email">電子郵件信箱</label>
+              <input type="email" class="form-control form-control-sweet" id="email" placeholder="example@email.com">
+            </div>
+            <!-- input_two -->
+            <div class="form-group row">
+              <label for="phone">統一編號（選填）</label>
+              <input type="phone" class="form-control form-control-sweet" id="phone" placeholder="12345678">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!-- tab_two -->
+      <div class="tab-pane fade" id="nav-mailInvoice">
+        <!-- form -->
+        <div class="text-sweet-green-light font-size-20 font-weight-600">
+          <form action="">
+            <!-- input_one -->
+            <div class="row">
+              <div class="form-group flex-grow-1">
+                <div class="form-row justify-content-between mb-2">
+                  <label class="mb-0" for="address">地址</label>
+                  <div class="form-group mb-0 d-none d-md-block">
+                    <div class="form-check login ">
+                      <input class="sweet-form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label text-white font-size-16" for="gridCheck">
+                        同運送地址
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row mb-2">
+                  <div class="col">
+                    <select class="custom-select custom-select-sweet">
+                      <option value="0">請選擇</option>
+                      <option value="1">台中市</option>
+                      <option value="2">台北市</option>
+                      <option value="3" selected="selected">高雄市</option>
+                    </select>
+                    <!-- <input type="text" class="form-control form-control-sweet" placeholder="高雄市"> -->
+                  </div>
+                  <div class="col">
+                    <select class="custom-select custom-select-sweet">
+                      <option value="0">請選擇</option>
+                      <option value="1">三民區</option>
+                      <option value="2">苓雅區</option>
+                      <option value="3" selected="selected">新興區</option>
+                    </select>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-sweet" id="inputAddress2" placeholder="幸福路 520 號">
+              </div>
+            </div>
+            <!-- input_two -->
+            <div class="form-group row">
+              <label for="phone">統一編號（選填）</label>
+              <input type="phone" class="form-control form-control-sweet" id="phone" placeholder="12345678">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- btn -->
+  <button type="submit"
+    class="btn btn-sweet-yellow-light btn-block text-sweet-green-dark font-size-24 font-weight-600 rounded-0 py-20">確認結帳
+  </button>
+</div>
