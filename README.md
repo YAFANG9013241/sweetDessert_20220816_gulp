@@ -15,4 +15,4 @@ npm install
 gulp
 ```
 
-[範例網站](https://wcc723.github.io/F2E-PK/)。
+[觀看網站](https://yafang9013241.github.io/sweetDessert_20220816_gulp/public/index.html)。
