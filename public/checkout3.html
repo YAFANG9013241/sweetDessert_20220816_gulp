@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    
+  </title>
+  <link rel="stylesheet" href="stylesheets/all.css">
+  <!-- fontawesome -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header my-30 my-md-35 ">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_header"
+        aria-controls="navbar_header" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand p-0" href="index.html">
+        <img src="images/logo-all-dark.svg" width="220" height="40" alt="">
+      </a>
+      <div class="collapse navbar-collapse order-md-0  order-1" id="navbar_header">
+        <ul class="navbar-nav ml-auto align-items-start">
+          <li class="nav-item active pr-md-44 mt-15 mt-md-0">
+            <a class="nav-link nav-link-color" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item pr-md-44">
+            <a class="nav-link nav-link-color" href="product.html">甜點</a>
+          </li>
+          <li class="nav-item pr-md-70">
+            <a class="nav-link nav-link-color" href="login.html">登入</a>
+          </li>
+        </ul>
+      </div>
+      <a href="shopCart.html">
+        <i class="material-icons align-middle order-0 order-md-1">shopping_cart</i>
+      </a>
+    </div>
+  </nav>
+</header>
+
+    <main class="container-fluid container-md">
+      <div class="row justify-content-center">
+        <div class="col-md-10  mb-md-65">
+          <div class="row">
+            <!-- left -->
+            <div class="col-md-7">
+              <!-- row.col-md-7 -->
+<div class="checkout row bg-sweet-green-dark justify-content-center">
+  <div class="col-10">
+    <!-- header -->
+    <div class="row justify-content-between text-sweet-green-light mt-30 align-items-center">
+      <h1 class="font-size-36 font-weight-600 mb-md-0">發票</h1>
+      <div class="group-circle d-flex justify-content-end ">
+        <div class="circle circle_two position-relative"><span></span></div>
+        <div class="line"></div>
+        <div class="circle circle_two position-relative"><span></span></div>
+        <div class="line"></div>
+        <div class="circle circle_one"></div>
+      </div>
+    </div>
+
+    <!-- nav_tab -->
+    <div class="row">
+      <nav class="nav nav-tabs-sweet flex-grow-1 text-center font-size-20 font-weight-600 text-sweet-green-dark my-30"
+        id="myTab" role="tablist">
+        <a class="nav-item nav-link flex-grow-1 active" data-toggle="tab" href="#nav-electronicInvoice">電子發票</a>
+        <a class="nav-item nav-link flex-grow-1" data-toggle="tab" href="#nav-mailInvoice">郵寄發票</a>
+      </nav>
+    </div>
+    <!-- tab-content -->
+    <div class="tab-content mb-30" id="nav-tabContent">
+      <!-- tab_one -->
+      <div class="tab-pane fade show active" id="nav-electronicInvoice">
+        <!-- form -->
+        <div class="text-sweet-green-light font-size-20 font-weight-600">
+          <form action="">
+            <!-- input_one -->
+            <div class="form-group row">
+              <label for="email">電子郵件信箱</label>
+              <input type="email" class="form-control form-control-sweet" id="email" placeholder="example@email.com">
+            </div>
+            <!-- input_two -->
+            <div class="form-group row">
+              <label for="phone">統一編號（選填）</label>
+              <input type="phone" class="form-control form-control-sweet" id="phone" placeholder="12345678">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!-- tab_two -->
+      <div class="tab-pane fade" id="nav-mailInvoice">
+        <!-- form -->
+        <div class="text-sweet-green-light font-size-20 font-weight-600">
+          <form action="">
+            <!-- input_one -->
+            <div class="row">
+              <div class="form-group flex-grow-1">
+                <div class="form-row justify-content-between mb-2">
+                  <label class="mb-0" for="address">地址</label>
+                  <div class="form-group mb-0 d-none d-md-block">
+                    <div class="form-check login ">
+                      <input class="sweet-form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label text-white font-size-16" for="gridCheck">
+                        同運送地址
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row mb-2">
+                  <div class="col">
+                    <select class="custom-select custom-select-sweet">
+                      <option value="0">請選擇</option>
+                      <option value="1">台中市</option>
+                      <option value="2">台北市</option>
+                      <option value="3" selected="selected">高雄市</option>
+                    </select>
+                    <!-- <input type="text" class="form-control form-control-sweet" placeholder="高雄市"> -->
+                  </div>
+                  <div class="col">
+                    <select class="custom-select custom-select-sweet">
+                      <option value="0">請選擇</option>
+                      <option value="1">三民區</option>
+                      <option value="2">苓雅區</option>
+                      <option value="3" selected="selected">新興區</option>
+                    </select>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-sweet" id="inputAddress2" placeholder="幸福路 520 號">
+              </div>
+            </div>
+            <!-- input_two -->
+            <div class="form-group row">
+              <label for="phone">統一編號（選填）</label>
+              <input type="phone" class="form-control form-control-sweet" id="phone" placeholder="12345678">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- btn -->
+  <a href="success.html" type="submit"
+    class="btn btn-sweet-yellow-light btn-block text-sweet-green-dark font-size-24 font-weight-600 rounded-0 py-20">確認結帳
+  </a>
+</div>
+            </div>
+            <!-- right -->
+            <!-- default-pink block-h590 -->
+            <div class="col-md-5 d-none d-md-block">
+              <div class="checkoutSummary border-1">
+                <div class="row block-h193 justify-content-center text-sweet-green-middle mb-1">
+                  <div class="col-md-12">
+                    <div
+                      class="text-center font-size-24 py-md-15 text-sweet-green-middle btn-sweet-green-light font-weight-600">
+                      訂單摘要
+                    </div>
+                  </div>
+                  <div class="col-md-11 d-flex justify-content-between px-20">
+                    <span>小計</span><span>NT$ 2,700</span>
+                  </div>
+                  <div class="col-md-11 d-flex justify-content-between px-20">
+                    <span>運費</span><span>NT$ 300</span>
+                  </div>
+                  <div class="col-md-11 d-flex justify-content-between font-size-20 font-weight-bold px-20">
+                    <span>總計</span><span>NT$ 3,000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="checkoutList border-1 mt-20">
+                <div class="row justify-content-center ">
+                  <div class="col-md-12">
+                    <div
+                      class="text-center font-size-24 py-md-15 text-sweet-green-middle btn-sweet-green-light font-weight-600">
+                      購物清單
+                    </div>
+                  </div>
+                  <div class="col-md-11  text-sweet-green-middle">
+                    <!-- 1 -->
+                    <div class="row my-3">
+                      <div class="col-6 pl-20 pr-10">
+                        <img class="bg-cover w-95-sm" src="https://bit.ly/2QvsT63" height="80" width="120">
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center pr-20 pl-10">
+                        <p class="mb-0">焦糖馬卡龍（2）</p>
+                        <p class="font-size-20 font-weight-600 mb-0">NT$ 900</p>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row">
+                      <div class="col-6 pl-20 pr-10">
+                        <img class="bg-cover w-95-sm" src="https://bit.ly/2zBDAxX" height="80" width="120">
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center pr-20 pl-10">
+                        <p class="mb-0">焦糖馬卡龍（2）</p>
+                        <p class="font-size-20 font-weight-600 mb-0">NT$ 900</p>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="row my-3">
+                      <div class="col-6 pl-20 pr-10">
+                        <img class="bg-cover w-95-sm" src="https://bit.ly/2zKOP7w" height="80" width="120">
+                      </div>
+                      <div class="col-6 d-flex flex-column justify-content-center pr-20 pl-10">
+                        <p class="mb-0">焦糖馬卡龍（2）</p>
+                        <p class="font-size-20 font-weight-600 mb-0">NT$ 900</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer bg-sweet-green-light">
+  <section class="foot-head d-flex justify-content-center align-items-md-center flex-md-row">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-md-center flex-column flex-md-row">
+        <div class="d-flex my-30 my-md-0 mr-md-124">
+          <img src="images/logo-light.svg" alt="" width="40" height="40" class="mr-20">
+          <p class="mb-0 text-white font-size-24">訂閱你我的甜蜜郵件</p>
+        </div>
+
+        <div class="input-group inputMail">
+          <!-- <span style="position:relative;"><i class="material-icons"
+              style="position:absolute; top: 16px; left:20px;z-index: 2;">
+              email
+            </i></span> -->
+          <span class="input-icons bg-white">
+          </span>
+          <input type="text" class="form-control input-h56 rounded-0 border-0  shadow-none pl-0">
+          <div class="input-group-append">
+            <button class="btn btn-sweet-yellow-light rounded-0" type="button" id="button-addon2">
+              <i class="material-icons  align-middle">
+                arrow_forward
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="foot-boby">
+    <div class="container ">
+      <div class="row justify-content-center mt-40">
+        <div class="col-10 col-md-5 d-flex flex-column justify-content-md-between">
+          <img src="images/logotype-sm-dark.svg" alt="" width="172" height="27">
+          <ul class="list-unstyled  sweet-text-color mb-0 mt-40 mt-md-0 contact">
+            <li>07-1234-5678</li>
+            <li>sweetaste@email.com</li>
+            <li>800 高雄市新興區幸福路 520 號</li>
+          </ul>
+        </div>
+        <div class="col-md-5 d-flex justify-content-md-end">
+          <img src="images/sm-今天是個吃甜點的好日子.svg" width="60" alt="" class="d-none d-md-block">
+        </div>
+        <div class="col-10 col-md-5 my-md-30 sweet-text-color mt-40 mt-md-0">
+          <img src="images/ic-line@.svg" height="32" width="32" alt="">
+          <img src="images/ic-facebook.svg" height="32" width="32" alt="">
+        </div>
+        <div class="col-10 col-md-5 my-md-30 sweet-text-color d-flex justify-content-md-end mt-25">
+          &copy 2018 Sweetaste* All Rights Reserved
+        </div>
+      </div>
+
+    </div>
+  </section>
+</footer>
+      <script src="javascripts/vendor.js"></script>
+      <script src="js/all.js"></script>
+      <script src="js/index.js"></script>
+
+</body>
+
+</html>

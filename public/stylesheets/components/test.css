@@ -1,0 +1,39 @@
+.test .guild {
+  height: 256px;
+  position: relative;
+  color: white;
+  text-decoration: none; }
+  .test .guild + .guild {
+    border-left: 1px solid white; }
+  .test .guild:active, .test .guild:hover {
+    color: #3f5d45; }
+    .test .guild:active .guild-mask, .test .guild:hover .guild-mask {
+      background-color: rgba(255, 255, 128, 0.5); }
+    .test .guild:active .guild-img, .test .guild:hover .guild-img {
+      filter: blur(0); }
+
+.test .guild-text {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr; }
+
+.test .guild-mask {
+  background-color: rgba(63, 93, 69, 0.8);
+  transition: background-color 0.5s;
+  z-index: -1; }
+
+.test .guild-img {
+  height: 256px;
+  filter: blur(5px);
+  z-index: -2; }
+
+.test .position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+/*# sourceMappingURL=test.css.map */

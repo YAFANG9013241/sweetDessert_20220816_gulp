@@ -1,0 +1,9 @@
+.header nav .active > .nav-link.nav-link-color,
+.header .nav-link.nav-link-color {
+  color: theme-color("sweet-green-dark"); }
+
+.header a {
+  color: theme-color("sweet-green-dark");
+  font: normal normal 600 16px 'PingFang TC'; }
+
+/*# sourceMappingURL=head.css.map */
