@@ -160,6 +160,7 @@ $spacers: map-merge(
     10: 10px,
     13: 13px,
     15: 15px,
+    17: 17px,
     19: 19px,
     20: 20px,
     25: 25px,
@@ -233,7 +234,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   // lg: 992px,
-  lg: 1024px // xl: 1200px,,,,,,,,,,,,,,,,,,,,,
+  lg: 1024px // xl: 1200px,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -247,7 +248,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   //  lg: 960px,
-  lg: 970px // xl: 1140px,,,,,,,,,,,,,,,,,,,,,
+  lg: 970px // xl: 1140px,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");

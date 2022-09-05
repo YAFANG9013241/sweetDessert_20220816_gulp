@@ -39,7 +39,9 @@
 .font-size-36 {
   @include sweet-font-size(36px);
 }
-
+.font-size-44 {
+  @include sweet-font-size(44px);
+}
 .font-size-24-18 {
   font-size: 24px;
 }
@@ -50,6 +52,11 @@
 
 .font-weight-600 {
   font-weight: 600;
+}
+
+//letter-spacing
+.letter-spacing-4 {
+  letter-spacing: 4px;
 }
 
 //border
@@ -121,7 +128,9 @@
 .block-h193 {
   height: 193px;
 }
-
+.block-h460 {
+  height: 460px;
+}
 .block-h590 {
   height: 590px;
 }

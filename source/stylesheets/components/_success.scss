@@ -1,0 +1,33 @@
+.success {
+    //tick
+    .tick {
+        word-spacing: -4px;
+        width: 190px;
+    }
+    .circle {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        background-color: #3f5d45;
+        border-radius: 50%;
+    }
+
+    .circle::after {
+        content: "✓";
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .line {
+        display: inline-block;
+        background: #3f5d45;
+        height: 1px;
+        width: 61px;
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    //img
+}
