@@ -12392,15 +12392,14 @@ a.text-sweet-green-middle:hover, a.text-sweet-green-middle:focus {
   cursor: pointer; }
 
 .product .tab-sweet-hart-fav {
-  background-image: url("images/tab-heart.png");
+  background-image: url("../../images/tab-heart.png");
   background-repeat: no-repeat;
   cursor: pointer; }
 
 @media (max-width: 767.98px) {
   .product .main-image {
     background-repeat: no-repeat;
-    height: 277px;
-    background-image: url("images/social.png"); } }
+    height: 277px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .product .product-img {
